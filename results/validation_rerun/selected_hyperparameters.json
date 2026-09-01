@@ -1,0 +1,6 @@
+{
+  "lambda": 0.0,
+  "epsilon": 0.01,
+  "eta": 0.5,
+  "selection_protocol": "sequential validation-only sweeps on Digits seeds 0-4"
+}
