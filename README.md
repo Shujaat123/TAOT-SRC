@@ -17,8 +17,6 @@ results/derived_rerun/
 figures_rerun/
 ```
 
-The earlier v3 numerical results are superseded and must not be used as reference targets for v4.
-
 ## Data policy
 
 The public GitHub repository **does not redistribute the original image datasets or the derived `data/features/` cache files**.
