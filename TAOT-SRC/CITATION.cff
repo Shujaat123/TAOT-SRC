@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated TAOT-SRC work."
+type: software
+title: "TAOT-SRC: Topology-Aware Optimal Transport for Sparse Representation Classification"
+authors:
+  - family-names: Khan
+    given-names: Shujaat
+version: "4.0"
+date-released: 2026-09-01
+url: "https://github.com/Shujaat123/TAOT-SRC"
+repository-code: "https://github.com/Shujaat123/TAOT-SRC"
