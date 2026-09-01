@@ -42,19 +42,7 @@ python verify.py
 
 The generated caches are written to `data/features/`, which is ignored by Git.
 
-## What changed in v4
-
-1. A seed defines one class-wise split shared by clean, `+/-10 deg`, and `+/-20 deg` evaluation.
-2. Rotation randomness is independent of split randomness.
-3. Each test sample receives one factor `u ~ Uniform[-1,1]`; its perturbations are `10u` and `20u` degrees, so rotation severity is paired sample-by-sample.
-4. Few-shot experiments use a fixed test set for 1/2/3/5/10 shots, with nested training subsets drawn from one 10-shot pool.
-5. Coefficient entropy is implemented exactly as `H(w) = -sum_j w_j log(w_j + 1e-9)`.
-6. Real-data OT methods share `eta=0.5` and `epsilon=0.01`; pairwise OT baselines use 60 Sinkhorn iterations, while TAOT uses 30 during optimization and 50 for final scoring.
-7. Ground-cost normalization uses a `1e-12` denominator safeguard.
-
-See [`PROTOCOL_CORRECTION_V4.md`](PROTOCOL_CORRECTION_V4.md) and [`METHOD_DEFINITION.md`](METHOD_DEFINITION.md) for the exact protocol and method definitions.
-
-## Authoritative v4 configuration
+## Authoritative configuration
 
 Validation uses only Digits seeds `0--4`. The final real-data configuration is:
 
@@ -272,11 +260,3 @@ https://github.com/Shujaat123/TAOT-SRC
 ```
 
 A machine-readable citation is also provided in [`CITATION.cff`](CITATION.cff).
-
-## Notes
-
-- No manuscript LaTeX is included in this repository.
-- No raw image dataset is redistributed by this repository.
-- No derived `data/features/` cache is redistributed by this repository.
-- No v3 reference-result CSVs are included.
-- v4 is the authoritative experimental record for this repository version.
